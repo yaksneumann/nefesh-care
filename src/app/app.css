@@ -1,0 +1,11 @@
+.main-bg {
+    background: linear-gradient(135deg, #e3f0ff 0%, #e6ffe6 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}

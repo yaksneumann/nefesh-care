@@ -1,0 +1,36 @@
+<section class="section donate-section">
+  <h2>Donate</h2>
+  <p>Your generosity helps us provide vital support and healing to those in need. Every donation makes a difference in someone's life journey.</p>
+  
+  <div class="donation-options">
+    <div class="donation-card">
+      <h3>One-time Donation</h3>
+      <p>Support our immediate needs with a one-time contribution of any amount.</p>
+      <div class="donation-amounts">
+        <button class="amount-btn">$18</button>
+        <button class="amount-btn">$36</button>
+        <button class="amount-btn">$72</button>
+        <button class="amount-btn">$180</button>
+        <button class="amount-btn">Other</button>
+      </div>
+    </div>
+    
+    <div class="donation-card">
+      <h3>Monthly Giving</h3>
+      <p>Provide sustainable support through monthly donations that help us plan for the future.</p>
+      <button class="donate-btn" [routerLink]="['']" fragment="contact" (click)="scrollToSection('contact')">Become a Monthly Donor</button>
+    </div>
+  </div>
+  
+  <div class="impact-section">
+    <h3>Your Impact</h3>
+    <ul>
+      <li>$50 provides one hour of individual counseling</li>
+      <li>$200 sponsors a trauma support group session</li>
+      <li>$500 funds a community healing workshop</li>
+      <li>$1,000 supports our emergency response services</li>
+    </ul>
+  </div>
+  
+  <button class="donate-btn" [routerLink]="['']" fragment="contact" (click)="scrollToSection('contact')">Donate Now</button>
+</section>

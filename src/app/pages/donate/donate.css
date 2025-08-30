@@ -1,0 +1,70 @@
+.donate-section {
+  background: linear-gradient(90deg, #e3f0ff 0%, #fffbe6 100%);
+  border: 2px solid #FFD700;
+}
+
+.donation-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.donation-card {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(34, 58, 94, 0.08);
+}
+
+.donation-card h3 {
+  color: #223A5E;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.donation-amounts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.amount-btn {
+  background: #4A90E2;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.amount-btn:hover {
+  background: #223A5E;
+}
+
+.impact-section {
+  background: rgba(126, 217, 87, 0.15);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.impact-section h3 {
+  color: #223A5E;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.impact-section ul {
+  padding-left: 1.2rem;
+  color: #223A5E;
+}
+
+.impact-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Note: donate-btn styling moved to global styles */

@@ -1,0 +1,29 @@
+.program-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.program-list li {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(74, 144, 226, 0.1);
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.program-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(34, 58, 94, 0.1);
+}
+
+.program-list h3 {
+  color: #4A90E2;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.program-list p {
+  color: #223A5E;
+  margin-bottom: 0;
+}

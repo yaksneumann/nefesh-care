@@ -1,0 +1,38 @@
+.landing-content {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  padding: 80px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Add some spacing between sections */
+section:not(:first-child) {
+  border-top: 1px solid rgba(74, 144, 226, 0.1);
+}
+
+/* Ensure the first section starts below the header */
+#home {
+  padding-top: 100px;
+}
+
+/* Add a subtle transition when sections come into view */
+section > * {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Improve spacing on mobile */
+@media (max-width: 768px) {
+  section {
+    min-height: auto;
+    padding: 60px 0;
+  }
+  
+  #home {
+    padding-top: 80px;
+  }
+}
