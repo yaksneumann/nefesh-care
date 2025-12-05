@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,10 +9,26 @@ import { RouterLink } from '@angular/router';
   standalone: true
 })
 export class Header {
+  menuOpen = false;
+
+  constructor(private router: Router) {}
+
   scrollToSection(sectionId: string): void {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    this.menuOpen = false;
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  }
+
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  navigateToAbout(): void {
+    this.menuOpen = false;
+    this.router.navigate(['/about']);
   }
 }
